@@ -1,12 +1,14 @@
+using System.Threading.Tasks;
 using NUnit.Framework;
 
 namespace RewardMatic_4000
 {
-    public class Tests
+    public partial class Tests
     {
         [SetUp]
         public void Setup()
         {
+            RewardGroup.MakeFromFileName("../../../rewards.json");
         }
 
         // test to make sure a user's score updates correctly and is arithmetically consistent
@@ -33,11 +35,11 @@ namespace RewardMatic_4000
         {
             User rangdo = new User();
             
-            Assert.AreEqual(rangdo.GetRewardInProgress(), Reward.AvailableRewards[0]);
+            Assert.AreEqual(RewardGroup.Available?[0].GetRewardByIndex(0), rangdo.GetRewardInProgress());
             
             rangdo.UpdateScore(250);
             
-            Assert.AreEqual(rangdo.GetRewardInProgress(), Reward.AvailableRewards[1]);
+            Assert.AreEqual(RewardGroup.Available?[0].GetRewardByIndex(1), rangdo.GetRewardInProgress());
             
             rangdo.UpdateScore(250000);
             
@@ -45,7 +47,7 @@ namespace RewardMatic_4000
         }
 
         // test to make sure the "latest reward received" function works correctly
-        // TODO implement User.GetLatestRewardReceived()
+        [Test]
         public void TestLatestReward()
         {
             User argond = new User();
@@ -54,11 +56,11 @@ namespace RewardMatic_4000
             
             argond.UpdateScore(250);
             
-            Assert.AreEqual(Reward.AvailableRewards[0], argond.GetLatestRewardReceived());
+            Assert.AreEqual(RewardGroup.Available?[0].GetRewardByIndex(0), argond.GetLatestRewardReceived());
             
             argond.UpdateScore(250000);
             
-            Assert.AreEqual(Reward.AvailableRewards[6], argond.GetLatestRewardReceived());
+            Assert.AreEqual(RewardGroup.Available?[4].GetRewardByIndex(5), argond.GetLatestRewardReceived());
         }
     }
 }

@@ -1,59 +1,137 @@
-[
-  {
-    "name": "Getting Started",
-    "rewards":
-    [
-      {"scoredifferential": 200, "name": "Starting strong!"},
-      {"scoredifferential": 300, "name": "Nice job!"},
-      {"scoredifferential": 400, "name": "Platitudes are awesome!"},
-      {"scoredifferential": 500, "name": "Keep going for cake!"},
-      {"scoredifferential": 600, "name": "OK, there's no cake. Keep going anyway!"},
-      {"scoredifferential": 700, "name": "YOU FINISHED! You are the only person to do this."}
-    ]
-  },
-  {
-    "name": "Now We're Cooking",
-    "rewards":
-    [
-      {"scoredifferential": 250, "name": "Warming up!"},
-      {"scoredifferential": 375, "name": "Hot plates!"},
-      {"scoredifferential": 500, "name": "Pancake power!"},
-      {"scoredifferential": 625, "name": "Séquentiel de couleur à memoire"},
-      {"scoredifferential": 750, "name": "Fiery feast!"},
-      {"scoredifferential": 875, "name": "Sweet success!"}
-    ]
-  },
-  {
-    "name": "Our Data Entry Operative Has Left",
-    "rewards":
-    [
-      {"scoredifferential": 300, "name": "Phoning it in at this point"},
-      {"scoredifferential": 450, "name": "Another goal"},
-      {"scoredifferential": 600, "name": "This one only has three rewards"}
-    ]
-  },
-  {
-    "name": "At Last, Back To Enthusiasm",
-    "rewards":
-    [
-      {"scoredifferential": 350, "name": "Mighty!"},
-      {"scoredifferential": 525, "name": "National Television System Committee"},
-      {"scoredifferential": 700, "name": "Extremely mighty!"},
-      {"scoredifferential": 875, "name": "Might be even mightier!"},
-      {"scoredifferential": 1050, "name": "Mightiest!"},
-      {"scoredifferential": 1225, "name": "Even mightiester! (Try saying that three times fast)"}
-    ]
-  },
-  {
-    "name": "The Alans of 1970s Library Music",
-    "rewards":
-    [
-      {"scoredifferential": 400, "name": "Alan Parker"},
-      {"scoredifferential": 600, "name": "Alan Tew"},
-      {"scoredifferential": 800, "name": "Alan Hawkshaw"},
-      {"scoredifferential": 1000, "name": "Alan Moorhouse"},
-      {"scoredifferential": 1200, "name": "Alan Silvestri"},
-      {"scoredifferential": 1400, "name": "Alan Menken"}
-    ]
-  }
-]
+{
+  "Groups": [
+    {
+      "Name": "Getting Started",
+      "Rewards": [
+        {
+          "ScoreDifferential": 200,
+          "Name": "Starting strong!"
+        },
+        {
+          "ScoreDifferential": 300,
+          "Name": "Nice job!"
+        },
+        {
+          "ScoreDifferential": 400,
+          "Name": "Platitudes are awesome!"
+        },
+        {
+          "ScoreDifferential": 500,
+          "Name": "Keep going for cake!"
+        },
+        {
+          "ScoreDifferential": 600,
+          "Name": "OK, there's no cake. Keep going anyway!"
+        },
+        {
+          "ScoreDifferential": 700,
+          "Name": "YOU FINISHED! You are the only person to do this."
+        }
+      ]
+    },
+    {
+      "Name": "Now We're Cooking",
+      "Rewards": [
+        {
+          "ScoreDifferential": 250,
+          "Name": "Warming up!"
+        },
+        {
+          "ScoreDifferential": 375,
+          "Name": "Hot plates!"
+        },
+        {
+          "ScoreDifferential": 500,
+          "Name": "Pancake power!"
+        },
+        {
+          "ScoreDifferential": 625,
+          "Name": "Séquentiel de couleur à memoire"
+        },
+        {
+          "ScoreDifferential": 750,
+          "Name": "Fiery feast!"
+        },
+        {
+          "ScoreDifferential": 875,
+          "Name": "Sweet success!"
+        }
+      ]
+    },
+    {
+      "Name": "Our Data Entry Operative Has Left",
+      "Rewards": [
+        {
+          "ScoreDifferential": 300,
+          "Name": "Phoning it in at this point"
+        },
+        {
+          "ScoreDifferential": 450,
+          "Name": "Another goal"
+        },
+        {
+          "ScoreDifferential": 600,
+          "Name": "This one only has three Rewards"
+        }
+      ]
+    },
+    {
+      "Name": "At Last, Back To Enthusiasm",
+      "Rewards": [
+        {
+          "ScoreDifferential": 350,
+          "Name": "Mighty!"
+        },
+        {
+          "ScoreDifferential": 525,
+          "Name": "National Television System Committee"
+        },
+        {
+          "ScoreDifferential": 700,
+          "Name": "Extremely mighty!"
+        },
+        {
+          "ScoreDifferential": 875,
+          "Name": "Might be even mightier!"
+        },
+        {
+          "ScoreDifferential": 1050,
+          "Name": "Mightiest!"
+        },
+        {
+          "ScoreDifferential": 1225,
+          "Name": "Even mightiester! (Try saying that three times fast)"
+        }
+      ]
+    },
+    {
+      "Name": "The Alans of 1970s Library Music",
+      "Rewards": [
+        {
+          "ScoreDifferential": 400,
+          "Name": "Alan Parker"
+        },
+        {
+          "ScoreDifferential": 600,
+          "Name": "Alan Tew"
+        },
+        {
+          "ScoreDifferential": 800,
+          "Name": "Alan Hawkshaw"
+        },
+        {
+          "ScoreDifferential": 1000,
+          "Name": "Alan Moorhouse"
+        },
+        {
+          "ScoreDifferential": 1200,
+          "Name": "Alan Silvestri"
+        },
+        {
+          "ScoreDifferential": 1400,
+          "Name": "Alan Menken"
+        }
+      ]
+    }
+  ]
+}
