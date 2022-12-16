@@ -15,17 +15,17 @@ namespace RewardMatic_4000
         [Test]
         public void TestScoreIncrementsCorrectly()
         {
-            User aspidistra = new User();
+            IUser aspidistra = new User();
 
-            Assert.AreEqual(0, aspidistra.Score);
+            Assert.AreEqual(0, aspidistra.GetScore());
             
             aspidistra.UpdateScore(250);
             
-            Assert.AreEqual(250,aspidistra.Score);
+            Assert.AreEqual(250,aspidistra.GetScore());
 
             aspidistra.UpdateScore(250000);
             
-            Assert.AreEqual(250250, aspidistra.Score);
+            Assert.AreEqual(250250, aspidistra.GetScore());
         }
 
         // test to make sure the "reward in progress" function works correctly
@@ -33,7 +33,7 @@ namespace RewardMatic_4000
         [Test]
         public void TestRewardInProgress()
         {
-            User rangdo = new User();
+            IUser rangdo = new User();
             
             Assert.AreEqual(RewardGroup.Available?[0].GetRewardByIndex(0), rangdo.GetRewardInProgress());
             
@@ -50,7 +50,7 @@ namespace RewardMatic_4000
         [Test]
         public void TestLatestReward()
         {
-            User argond = new User();
+            IUser argond = new User();
             
             Assert.IsNull(argond.GetLatestRewardReceived());
             

@@ -6,11 +6,9 @@ using NUnit.Framework.Constraints;
 
 namespace RewardMatic_4000
 {
-    public class User
+    public class User: IUser
     {
         private int _cumulativeRewardScoresAchieved = 0;
-        
-
         
         private int _score = 0;
 
@@ -114,5 +112,8 @@ namespace RewardMatic_4000
             if (_indexRewardGroupInProgress == 0) return null;
             return RewardGroup.Available?[_indexRewardGroupInProgress - 1];
         }
+
+        public int GetScore() => Score;
+
     }
 }

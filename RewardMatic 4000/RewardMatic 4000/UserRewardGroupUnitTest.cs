@@ -8,7 +8,7 @@ namespace RewardMatic_4000
         [Test]
         public void TestRewardGroupInProgress()
         {
-            User rangdo = new User();
+            IUser rangdo = new User();
             
             Assert.AreEqual(RewardGroup.Available?[0], rangdo.GetRewardInProgress()?.Group);
             
@@ -25,7 +25,7 @@ namespace RewardMatic_4000
         [Test]
         public void TestLatestRewardReceivedGroup()
         {
-            User argond = new User();
+            IUser argond = new User();
             
             Assert.IsNull(argond.GetLatestRewardReceived());
             
@@ -42,7 +42,7 @@ namespace RewardMatic_4000
         [Test]
         public void TestLatestRewardGroupFullyCompleted()
         {
-            User argond = new User();
+            IUser argond = new User();
             
             Assert.IsNull(argond.GetLatestRewardGroupCompleted());
             
