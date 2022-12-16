@@ -27,40 +27,5 @@ namespace RewardMatic_4000
             
             Assert.AreEqual(250250, aspidistra.GetScore());
         }
-
-        // test to make sure the "reward in progress" function works correctly
-        // TODO implement User.GetRewardInProgress()
-        [Test]
-        public void TestRewardInProgress()
-        {
-            IUser rangdo = new User();
-            
-            Assert.AreEqual(RewardGroup.Available?[0].GetRewardByIndex(0), rangdo.GetRewardInProgress());
-            
-            rangdo.UpdateScore(250);
-            
-            Assert.AreEqual(RewardGroup.Available?[0].GetRewardByIndex(1), rangdo.GetRewardInProgress());
-            
-            rangdo.UpdateScore(250000);
-            
-            Assert.IsNull(rangdo.GetRewardInProgress());
-        }
-
-        // test to make sure the "latest reward received" function works correctly
-        [Test]
-        public void TestLatestReward()
-        {
-            IUser argond = new User();
-            
-            Assert.IsNull(argond.GetLatestRewardReceived());
-            
-            argond.UpdateScore(250);
-            
-            Assert.AreEqual(RewardGroup.Available?[0].GetRewardByIndex(0), argond.GetLatestRewardReceived());
-            
-            argond.UpdateScore(250000);
-            
-            Assert.AreEqual(RewardGroup.Available?[4].GetRewardByIndex(5), argond.GetLatestRewardReceived());
-        }
     }
 }
