@@ -54,7 +54,6 @@ namespace RewardMatic_4000
                     _rewardInProgress = 0;
                     if (_actualRewardInProgress != null) _actualLastAchieved = _actualRewardInProgress;
                     if (_actualLastAchieved != null) _totalSoFar += _actualLastAchieved.ScoreDifferential;
-                    _actualRewardInProgress = null;
 
                     if (RewardGroup.Available.Length > _groupInProgress)
                     {
